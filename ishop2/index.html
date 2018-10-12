@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <meta charset="utf-8" />
+  <title>iShop</title>
+</head> 
+<body> 
+  <div id="container"></div> 
+      
+  <script src="https://unpkg.com/react@15/dist/react.js"></script> 
+  <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script> 
+      
+  <script src="InfBlock.js"></script>
+  <link rel="stylesheet" type="text/css" href="InfBlock.css" />
+
+  <script>
+    var HeadText='Список товаров:';
+    var ListArr=[ 
+      {name:'Помидоры',code:1,price:10,url:'img/tomatos.jpg',count:222}, 
+      {name:'Огурцы',code:2,price:5,url:'img/cucumber.jpg',count:200}, 
+      {name:'Лук',code:3,price:2,url:'img/onion.jpg',count:122}
+    ];
+    ReactDOM.render(
+      React.createElement(InfBlock,{head:HeadText,list:ListArr}), 
+      document.getElementById('container') 
+    );
+  </script>
+
+</body> 
+</html>

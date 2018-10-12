@@ -1,0 +1,19 @@
+﻿.ListBlock
+{
+  border: 1px solid black;
+  width: 500px;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.Img {
+  width:100px;
+}
+
+.Selected {
+  background-color: aqua;
+}
