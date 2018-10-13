@@ -3,7 +3,7 @@
   displayName: 'InfBlock',
 
   propTypes: {
-    header: React.PropTypes.string.isRequired,
+    head: React.PropTypes.string.isRequired,
     list: React.PropTypes.array.isRequired,
   },
 
