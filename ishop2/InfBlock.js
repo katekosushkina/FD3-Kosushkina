@@ -7,7 +7,7 @@
     list: React.PropTypes.array.isRequired,
   },
 
-  changeColor: function(code){
+  color: function(){
     this.setState({}, ( {className:'Selected'}));
     // не меняется className
   },
@@ -37,7 +37,7 @@
           React.DOM.td({},React.DOM.input({className:'Control',type:'button', value: "Delete",onClick:this.deleted(v.code)})),
         )
       );
-    return React.DOM.table( {className:'ListBlock'}, answersCode,
+    return React.DOM.table( {className:'ListBlock'},
       React.DOM.caption( {className:'Header'}, this.props.head),
       React.DOM.thead( {className:'THead'}, tHead ),
       React.DOM.tbody( {className:'Items'}, ListCode ),
